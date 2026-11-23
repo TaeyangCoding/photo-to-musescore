@@ -28,6 +28,8 @@ description: 사용자가 악보 사진이나 스캔 이미지를 보내고 뮤�
 
 ## 승인된 모양
 
+사보할 때 [사용자의 찬양악보 블로그](https://blog.naver.com/kangpower12)와 [「주를 위한 이곳에」 게시 예시](https://blog.naver.com/kangpower12/224476880336)를 읽기 전용으로 참고한다. 인터넷 연결 없이도 확인할 수 있는 [완성 PNG](examples/true-worshippers/score-D.png), [PDF](examples/true-worshippers/score-D.pdf), [MSCZ](examples/true-worshippers/score-D.mscz)를 번들했다. 첫 작업이나 배치를 맞출 때 PNG를 실제로 보고, 필요하면 MSCZ의 스타일·못갖춤·줄바꿈을 확인한다. 예시는 사용자의 사보 결과이며 원곡의 작사·작곡과 구분한다. 다른 곡에 예시의 곡명·가사·음표·마디번호·사보자 이름을 그대로 적용하지 않는다. 블로그를 참고하는 것은 글 수정·업로드·발행 허락이 아니다.
+
 스타일 기준은 [assets/score-style.mss](assets/score-style.mss)다. 최초 제공한 MSS를 MuseScore 4에서 적용하고, 실제 출력으로 확인한 영문 부제 글꼴을 반영한 사본이다. 새 사용자 요청이 우선한다.
 
 - A4 세로, 사방 약 15mm 여백. 제목과 가사는 **DX시인과나**, 제목 22pt·가사 11pt. 음악 기호 Leland, 코드 jazz 스타일.

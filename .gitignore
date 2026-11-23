@@ -14,3 +14,6 @@ outputs/
 *.ttf
 *.otf
 *.ttc
+!examples/true-worshippers/score-D.png
+!examples/true-worshippers/score-D.pdf
+!examples/true-worshippers/score-D.mscz
