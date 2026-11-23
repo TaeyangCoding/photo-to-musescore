@@ -1,0 +1,4 @@
+interface:
+  display_name: "악보 사진을 뮤즈스코어로 만들기"
+  short_description: "악보 사진을 내 스타일로 사보해 편집 가능한 MSCZ·PDF와 검토용 PNG를 만듭니다"
+  default_prompt: "$taeyang-musescore 이 악보 사진을 내 스타일의 뮤즈스코어 악보로 만들고, MSCZ·PDF·PNG를 준비한 뒤 PNG로 보여줘."
