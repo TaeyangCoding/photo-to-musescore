@@ -8,7 +8,7 @@ MusicXML을 가져올 때 글꼴이 기본값으로 덮이는 경우가 있었�
 
 ```
 mscore input.musicxml -o work/imported.mscx
-mscore work/imported.mscx -S /absolute/path/to/assets/taeyang.mss -o output.mscz
+mscore work/imported.mscx -S /absolute/path/to/assets/score-style.mss -o output.mscz
 mscore output.mscz -o output.pdf
 mscore output.mscz -r 240 -o output.png
 ```
@@ -20,7 +20,7 @@ MuseScore 4.7의 MSCX는 `score_style.mss`, `META-INF/`, 오디오·보기 설�
 네이티브 XML의 `Score/Staff/VBox/Text`에서 스타일은 `title`, `subtitle`, `composer`, `poet`로 확인됐다.
 
 - `composer`의 `text`에 `임선호 작곡\n김준영 작사`처럼 두 줄을 넣으면 오른쪽에 쌓인다. 재저장 후 `<br/>` 요소로 바뀔 수 있으니 검증 시 `findtext()`만 쓰지 말고 자식 텍스트도 합쳐 읽는다.
-- `poet` 텍스트를 `강태양 사보`로 바꿔 왼쪽에 둔다. 원래 작사가는 메타데이터와 오른쪽 크레딧에 유지한다.
+- `poet` 텍스트에 사용자가 지정한 사보자 크레딧을 넣어 왼쪽에 둔다. 원래 작사가는 메타데이터와 오른쪽 크레딧에 유지한다.
 - VBox 높이는 제목·부제·두 줄 크레딧을 보고 조정한다. 승인 예시는 14sp였지만 새 곡의 긴 제목에 고정하지 않는다.
 - 최초 검증 때 `Xingkai TC`가 없는 환경에서 SFNS로 대체되는 문제가 있었다. 번들 스타일은 `Brush Script MT`를 사용한다. 해당 글꼴이 실제 설치됐는지 확인하고 PDF의 `/BrushScriptMT` 사용도 확인한다.
 
