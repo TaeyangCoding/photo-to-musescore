@@ -1,6 +1,6 @@
-# 악보 사진을 내 스타일 MuseScore로 만들기
+# 사진을 뮤즈스코어 악보로 변환
 
-악보 사진이나 스캔 이미지를 보내면, 에이전트가 음표·리듬·코드·가사를 읽어 강태양 스타일의 **편집 가능한 MuseScore 악보**로 사보하는 스킬입니다.
+악보 사진이나 스캔 이미지를 보내면, 에이전트가 음표·리듬·코드·가사를 읽어 **편집 가능한 MuseScore 악보**로 사보하는 스킬입니다.
 
 ## 결과물
 
@@ -27,18 +27,18 @@ OpenClaw의 [공식 스킬 문서](https://docs.openclaw.ai/tools/skills)에 따
 
 ```sh
 mkdir -p "$HOME/.openclaw/skills"
-git clone https://github.com/TaeyangCoding/taeyang-musescore.git "$HOME/.openclaw/skills/taeyang-musescore"
+git clone https://github.com/TaeyangCoding/photo-to-musescore.git "$HOME/.openclaw/skills/photo-to-musescore"
 ```
 
 이미 같은 이름의 폴더가 있으면 덮어쓰지 말고 기존 변경을 확인·보관한 뒤 갱신하세요. 현재 OpenClaw의 스킬 목록 또는 `openclaw skills check`에서 인식 여부를 확인하고 새 대화에서 사용합니다. 에이전트별 스킬 허용 목록을 쓰는 환경에서는 해당 에이전트에 이 스킬을 허용해야 합니다.
 
-Codex에서는 같은 저장소를 `~/.codex/skills/taeyang-musescore`에 설치할 수 있습니다. `agents/openai.yaml`은 Codex용 표시 정보이며, 핵심 지침은 공통 `SKILL.md`에 있습니다.
+Codex에서는 같은 저장소를 `~/.codex/skills/photo-to-musescore`에 설치할 수 있습니다. `agents/openai.yaml`은 Codex용 표시 정보이며, 핵심 지침은 공통 `SKILL.md`에 있습니다.
 
 ## 사용 예시
 
 악보 사진을 첨부하고 다음처럼 요청합니다.
 
-> 이 악보 사진을 taeyang-musescore 스킬로 내 스타일의 뮤즈스코어 악보로 만들어줘. MSCZ·PDF·PNG를 준비하고, 검토할 때는 PNG만 보여줘.
+> 이 악보 사진을 photo-to-musescore 스킬로 편집 가능한 뮤즈스코어 악보로 변환해줘. MSCZ·PDF·PNG를 준비하고, 검토할 때는 PNG만 보여줘.
 
 특정 조가 필요하면 곡의 조와 옥타브·음역 조건을 함께 적습니다. 조 추천을 요청하면 기준 조를 포함해 약 5개를 제안하며, 검토·승인 절차가 있는 작업에서는 나머지 조를 승인 후 제작합니다.
 
@@ -46,7 +46,7 @@ Codex에서는 같은 저장소를 `~/.codex/skills/taeyang-musescore`에 설치
 
 - A4 세로, 사방 약 15mm 여백
 - 제목·가사: DX시인과나, 영문 부제: Brush Script MT
-- 작곡·작사 크레딧과 `강태양 사보` 표기
+- 작곡·작사 및 사용자가 지정한 사보자 크레딧 표기
 - 보컬 문장이 끊기지 않도록 못갖춤 부분과 줄바꿈 조정
 - 원본과 모든 출력 페이지를 대조하고, 판독이 불확실한 부분은 명시
 
